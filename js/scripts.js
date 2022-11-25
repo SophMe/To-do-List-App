@@ -8,10 +8,10 @@ function newItem(){
    // let text = document.createTextNode(inputValue);
    // li.appendChild(text);
 
-   let list = $('#list');
+   let list = $('<li></li>');
    let inputValue = $('#input').val();
-   let text = li.append(inputValue);
-   li.append(text);
+   //let text = li.append(inputValue);
+   li.append(inputValue);
 
    // if (inputValue === '') {
    //   alert("You must write something!");
@@ -23,16 +23,23 @@ function newItem(){
    if (inputValue === '') {
     alert('Please write something.');
    } else {
-    let list = $('#list');
-    list.append(li);
+      $('#list').append(li);
    }
 
  //2. Crossing out an item from the list of items:
-   function crossOut() {
- 		li.classList.toggle("strike");
- 	}
+  //  function crossOut() {
+ 	// 	li.classList.toggle("strike");
+ 	// }
 
- 	li.addEventListener("dblclick",crossOut);
+  functon crossOut() {
+    li.toggleClass('strike');
+  }
+
+ 	// li.addEventListener("dblclick",crossOut);
+
+  li.on('dblclick', function crossOut() {
+    li.toggleClass('strike');
+  });
 
  //3(i). Adding the delete button "X": 
    let crossOutButton = document.createElement("crossOutButton");
