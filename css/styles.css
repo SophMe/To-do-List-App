@@ -3,7 +3,9 @@
 
 body {
 font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #dfdfdf;
+background-image: url(../img/bgimage.png);
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .container{
@@ -24,11 +26,12 @@ padding: 4px 15px 4px 5px;
 
 #button{
 display: inline-block;
-background-color:#fc999b;
+background-color:#a890f0;
 color:#ffffff;
 border-radius: 5px;
 text-align:center;
 margin-top:2px;
+margin-left: 20px;
 padding: 5px 15px;
 }
 
@@ -48,6 +51,13 @@ li:hover{
   cursor: pointer;
  }
 
+button {
+	background: #f0ead2;
+	border: 2px solid #f0ead2;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
 .delete {
 	display: none;
 }
@@ -58,4 +68,5 @@ li > crossOutButton {
 	float: right;
 	color: #025f70;
 	font-weight: 800;
+	padding-left: 20px;
 }
