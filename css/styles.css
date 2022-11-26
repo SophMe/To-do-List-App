@@ -43,7 +43,7 @@ ol {padding-left: 20px;}
 
 ol li {padding: 5px;color:#000;}
 
-ol li:nth-child(even){background: #dfdfdf;}
+ol li:nth-child(even){background: #dae1a9;}
 
 .strike{text-decoration: line-through;}
 
