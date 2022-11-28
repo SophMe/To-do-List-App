@@ -1,6 +1,6 @@
 ### To-do List App
 
-https://sophme.github.io/to-do-list-app
+https://bespoke-baklava-a7a85e.netlify.app/
 
 ### This is a basic To-Do-List app with the following features:
 
